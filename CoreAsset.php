@@ -69,7 +69,7 @@ class CoreAsset extends AssetBundle
     public function registerAssetFiles($view)
     {
         $language = $this->language ? $this->language : Yii::$app->language;
-        if ($language != 'en-us' || $language != 'en') 
+        if ($language != 'en-US') 
         {
             $this->js[] = "lang/{$language}.js";
         }
